@@ -1,0 +1,34 @@
+{
+  "name": "trevor-proxy",
+  "version": "1.0.0",
+  "description": "Trevor's  proxy server",
+  "main": "index.js",
+  "scripts": {
+    "restart": "pm2 startOrRestart ecosystem.config.js",
+    "deploy": "pm2 deploy ecosystem.config.js production",
+    "react-dev": "webpack --config ./webpack.config.js -w",
+    "server-dev": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baebay/proxy-ross.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baebay/proxy-ross/issues"
+  },
+  "homepage": "https://github.com/baebay/proxy-ross#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "pm2": "^3.5.1"
+  }
+}
